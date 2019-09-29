@@ -1180,7 +1180,6 @@ int disable_snd_device(struct audio_device *adev,
             }
         } else {
             audio_route_reset_and_update_path(adev->audio_route, device_name);
-            amplifier_enable_devices(snd_device, false);
         }
 
         if (SND_DEVICE_OUT_BT_A2DP == snd_device)
